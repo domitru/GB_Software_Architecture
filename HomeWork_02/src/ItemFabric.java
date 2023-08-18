@@ -1,5 +1,3 @@
-package HomeWork_02;
-
 public abstract class ItemFabric {
 
     public void openRewgard() {

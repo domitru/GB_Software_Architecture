@@ -1,10 +1,9 @@
-package HomeWork_02;
 
 public class SilverReward implements iGameItem {
 
     @Override
     public void open() {
-        System.out.println("Silver");
+        System.out.println("Серебришко найдено !!! Ю - ху - хо 😉");
     }
 
 }

@@ -1,14 +1,15 @@
-package HomeWork_02;
-
-/*
- * Закончить разработку паттерна Фабричный метод
- */
-
 public class Main {
     public static void main(String[] args) {
-        ItemFabric generator = new HomeWork_02.GoldGenerator();
+        // Создание генератора сундуков с золотом
+        ItemFabric generator = new GoldGenerator();
         generator.openRewgard();
+
+        // Создание генератора сундуков с серебром
         generator = new SilverGenerator();
         generator.openRewgard();
+
+        // Создание генератора пустых сундуков
+        ItemFabric emptyChestGenerator = new EmptyChestGenerator();
+        emptyChestGenerator.openRewgard();
     }
 }

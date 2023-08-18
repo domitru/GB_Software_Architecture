@@ -1,8 +1,10 @@
 package ModelElements;
 
+import Staff.Point3D;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Poligon {
-    ArrayList<Point3D> points = new ArrayList<>();
+    public List<Point3D> Points;
+
 }

@@ -1,19 +1,26 @@
 package ModelElements;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Scene {
-    int id;
-    ArrayList<PoligonalModel> models = new ArrayList<>();
-    ArrayList<Flash> flashes = new ArrayList<>();
+    public int ID;
+    public List<PoligonalModel> Models;
+    public List<Flash> Flashes;
+    public List<Camera> Cameras;
 
-    public Object method1(Object in1) {
-        return in1;
+    public Scene(int ID, List<PoligonalModel> models,
+                 List<Flash> flashes,
+                 List<Camera> cameras)
+            throws Exception {
+        if (models.size() > 0) {
+            Models = models;
+        } else throw new Exception("Models size exception");
+        if (cameras.size() > 0) {
+            Cameras = cameras;
+        } else throw new Exception("Cameras size exception");
+
+        this.ID = ID;
+
+        Flashes = flashes;
     }
-
-    public Object method2(Object in1, Object in2) {
-        Object ret = new Object();
-        return ret;
-    }
-
 }

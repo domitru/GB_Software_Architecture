@@ -1,10 +1,19 @@
 package ModelElements;
 
+import Staff.Point3D;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class PoligonalModel {
+    public List<Poligon> Poligons;
+    public List<Texture> Textures;
 
-    ArrayList<Poligon> poligons = new ArrayList<>();
-    ArrayList<Texture> textures = new ArrayList<>();
+    public PoligonalModel(List<Texture> Textures) {
+        this.Textures = Textures;
+        List<Point3D> Res = new ArrayList<>();
+        Poligons.add(new Poligon());
+    }
+
 
 }

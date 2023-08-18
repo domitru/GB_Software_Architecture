@@ -1,15 +1,16 @@
 package ModelElements;
 
+import Staff.Angle3D;
+import Staff.Point3D;
+
 public class Camera {
+    public Point3D Location;
+    public Angle3D Angle;
 
-    Point3D location;
-    Angle3D angle;
-
-    public void Rotate(Angle3D grad) {
+    public void Rotate(Angle3D angle) {
 
     }
 
-    public void Move(Point3D cm) {
-
+    public void Move(Point3D point) {
     }
 }
